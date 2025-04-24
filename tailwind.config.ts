@@ -18,10 +18,11 @@ const config: Config = {
         legacySecondary: '#297373', // Original secondary for backward compatibility
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        opensans: ['Open Sans', 'sans-serif'],
-        raleway: ['Raleway', 'sans-serif'],
-        sourcecodepro: ['Source Code Pro', 'monospace'],
+        leonetta: ['Leonetta Serif', 'serif'],
+        ltsiptext: ['LTSipText', 'sans-serif'],
+        navara: ['Navara', 'sans-serif'],
+        delon: ['Delon', 'sans-serif'],
+        hogira: ['Hogira', 'sans-serif'],
       },
     },
   },
