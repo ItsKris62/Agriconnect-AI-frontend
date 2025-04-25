@@ -43,9 +43,15 @@ export default function FeedbackForm({ isOpen, onClose }: FeedbackFormProps) {
         setStatus('idle');
         onClose();
       }, 2000);
-    } catch (error: any) {
+    } catch (error: unknown) {
       setStatus('error');
-      setErrorMessage(error.response?.data?.message || 'An error occurred');
+      if (error && typeof error === 'object' && 'response' in error && 
+          error.response && typeof error.response === 'object' && 'data' in error.response &&
+          error.response.data && typeof error.response.data === 'object' && 'message' in error.response.data) {
+        setErrorMessage(error.response.data.message as string || 'An error occurred');
+      } else {
+        setErrorMessage('An error occurred');
+      }
     }
   };
 

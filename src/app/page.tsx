@@ -2,7 +2,7 @@ import Header from '@/components/common/Header';
 import Hero from '@/components/common/Hero';
 import FeaturesSection from '@/components/common/FeaturesSection';
 import ProductSection from '@/components/common/ProductSection';
-import InsightsDashboard from '@/components/common/InsightsDashboard';
+// import InsightsDashboard from '@/components/common/InsightsDashboard';
 import Testimonials from '@/components/common/Testimonials';
 import CTASection from '@/components/common/CTASection';
 import Footer from '@/components/common/Footer';
@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
         <FeaturesSection />
         <ProductSection />
-        <InsightsDashboard />
+        {/* <InsightsDashboard /> */}
         <Testimonials />
         <CTASection />
       </main>
